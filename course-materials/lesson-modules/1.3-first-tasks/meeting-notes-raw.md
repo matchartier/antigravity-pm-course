@@ -12,6 +12,7 @@ context: weekly product sync
   - might help with retention?
 
 jordan showed initial mockups for dark mode
+
 - looks good! really clean
 - uses our existing color system
 - question: what about user-uploaded images? contrast issues?
@@ -19,22 +20,26 @@ jordan showed initial mockups for dark mode
 
 ONBOARDING discussion:
 sarah: "we need to hit 60% activation by end of Q1"
+
 - current: 45% (not great)
 - time to first task completion: 45 min (too slow)
 - competitor linear: ~15 min
 
 ideas discussed:
+
 - template library (pre-built projects users can start with)
 - better first-run experience
 - video tutorials? (jordan says maybe not, users skip videos)
 - interactive tour (jordan likes this)
 
 ACTION ITEMS:
+
 - me: research what competitors do for onboarding (asana, linear, clickup)
 - jordan: wireframes for interactive tour concept
 - sarah: talk to customer success about common activation blockers
 
 also talked about mobile app progress
+
 - on track for Q1 launch (good news!)
 - alex (mobile PM) demoing beta next week
 
@@ -46,6 +51,7 @@ mike (cto) wants to discuss notifications system
 
 CONTEXT:
 notifications are messy right now
+
 - too many emails (users complaining)
 - not enough context in notifications
 - mobile notifications not working great
@@ -53,11 +59,13 @@ notifications are messy right now
 
 Mike's perspective:
 "engineering team is drowning in notifications"
+
 - average engineer gets 40-50 notifications/day
 - most are noise
 - important stuff gets buried
 
 discussed:
+
 1. smart batching (group similar notifications)
    - mike: "like github does it - one email for multiple events"
    - me: makes sense, but need to define what gets batched
@@ -77,12 +85,14 @@ discussed:
    - mike mentioned they built this at his last company
 
 TECHNICAL CONSIDERATIONS:
+
 - notification service currently synchronous (slows down API)
 - need to move to async queue (redis? kafka?)
 - mike estimates 2 sprint effort
 - need database schema changes (preferences table redesign)
 
 CONCERNS from Mike:
+
 - team is at capacity (mobile app work)
 - this would push dark mode back
 - suggests Q2 instead of Q1?
@@ -91,12 +101,14 @@ my take: notifications are important but dark mode is more visible
 sarah might disagree - need to discuss priorities
 
 ACTION:
+
 - me: draft PRD for notification improvements
 - me: talk to customer success - how many tickets are notification-related?
 - me: competitive analysis (how do other tools handle this?)
 - mike: technical spec if we decide to move forward
 
 random note: mike mentioned engineer happiness survey results
+
 - tools satisfaction: 7.2/10 (down from 7.8 last quarter)
 - dark mode came up multiple times in comments
 - performance issues mentioned (3 people)
@@ -111,6 +123,7 @@ attendees: me, jordan (design), alex (mobile pm), jamie (eng lead)
 BACKGROUND:
 users take forever to get started
 new user flow:
+
 1. sign up
 2. stare at empty workspace
 3. ... now what?
@@ -122,6 +135,7 @@ GOAL: get users to value faster
 
 TEMPLATE LIBRARY CONCEPT:
 pre-built project templates users can use
+
 - "product launch"
 - "sprint planning"
 - "hiring pipeline"
@@ -132,36 +146,43 @@ pre-built project templates users can use
 discussion:
 
 jordan: "we should show templates immediately after signup"
+
 - modal: "choose a template to get started"
 - can skip (create blank project)
 - templates have real tasks, not just structure
 
 me: "how many templates do we need?"
+
 - jordan: "start with 5-7, expand later"
 - too many = paradox of choice
 - too few = not enough variety
 
 alex: "mobile app should have templates too"
+
 - consistent experience
 - mobile users probably need templates more (smaller screen, harder to setup)
 
 jamie (eng): "template data structure?"
+
 - json files? database records?
 - need versioning (templates evolve)
 - need to support custom fields (templates might use them)
 
 CONCERNS:
 jamie: "templates are tricky"
+
 - users customize templates
 - template updates don't affect existing projects
 - or DO they? (might be a feature!)
 
 me: "privacy/security?"
+
 - enterprise customers might want PRIVATE templates
 - team-specific templates (not just global)
 - sarah mentioned this before
 
 COMPETITIVE RESEARCH NOTES:
+
 - Asana has template library (huge! 100+ templates)
   - organized by category
   - some are "certified" by Asana
@@ -171,12 +192,14 @@ COMPETITIVE RESEARCH NOTES:
 - linear: NO templates (interesting! they just have blank projects)
 
 OPEN QUESTIONS:
+
 1. template discovery - how do users find templates?
 2. template customization - edit before creating project?
 3. community templates - let users share?
 4. template analytics - which templates are popular?
 
 jamie's technical estimate: 3-4 sprints
+
 - template storage system
 - template rendering logic
 - UI for browsing templates
@@ -184,16 +207,19 @@ jamie's technical estimate: 3-4 sprints
 - versioning system (if we want updates)
 
 alex: "can this wait until after mobile app ships?"
+
 - team capacity issue again
 - mobile app = Q1 priority
 - this might be Q2
 
 DECISION: need to prioritize with Sarah
+
 - is template library Q1 or Q2?
 - ties into activation OKR (important!)
 - but team capacity is constrained
 
 ACTION ITEMS:
+
 - me: write one-pager on template library (scope, goals, timeline)
 - me: gather data on activation drop-off (where do users abandon?)
 - jordan: quick mockups of template selection UI
@@ -214,12 +240,14 @@ RANDOM NOTES / PARKING LOT:
 personal reminder: need to review alex's mobile PRD by wednesday
 
 UPCOMING THIS WEEK:
+
 - tuesday: customer interview (enterprise admin from salesforce)
 - wednesday: design review (dark mode final mockups)
 - thursday: sprint planning
 - friday: all-hands
 
 data to pull:
+
 - activation funnel breakdown (where are drop-offs?)
 - notification ticket volume (last 3 months)
 - feature request frequency (dark mode vs templates vs notifications)
@@ -228,6 +256,7 @@ data to pull:
 ---
 
 PRIORITIES EMERGING:
+
 1. mobile app (committed, Q1)
 2. dark mode (highly requested, team morale, relatively quick)
 3. activation/onboarding (OKR-critical, but what exactly?)
@@ -241,6 +270,7 @@ need to get clarity from sarah on what's actually Q1 vs Q2
 
 FOLLOW-UPS NEEDED:
 ✓ competitive research on onboarding (me)
+
 - PRD for notifications (me)
 - one-pager on template library (me)
 - talk to customer success re: notifications & activation (me)
@@ -251,3 +281,29 @@ FOLLOW-UPS NEEDED:
 - technical estimate for templates (jamie)
 
 busy week ahead!
+
+---
+
+## Clean Summary
+
+**Top Priorities & Decisions Needed:**
+
+- **Q1 Priorities:** Mobile App is committed. Need to deconflict Dark Mode vs. Notifications vs. Activation/Onboarding.
+- **Dark Mode:** High demand (users + engineering). Relatively quick win. Likely Q1.
+- **Activation/Onboarding:** Critical for hitting 60% activation goal. Ideas: Template Library (large scope, 3-4 sprints) vs. Interactive Tour.
+- **Notifications:** Major pain point (too noisy), but technically complex (2 sprints) and risks pushing back Dark Mode. Might move to Q2.
+
+**Key Updates by Project:**
+
+- **Mobile App:** On track for Q1 launch. Beta demo next week.
+- **Template Library:** Brainstormed concept to help users start faster. Technical estimate 3-4 sprints. Competing for resources with Mobile App.
+- **Notifications:** Mike proposing overhaul (batching, digests, preferences). Needs architectural shift (async queue).
+
+**Immediate Action Items:**
+
+- [ ] **Me:** Research competitor onboarding (Asana, Linear).
+- [ ] **Me:** Draft PRD for Notification improvements.
+- [ ] **Me:** Write one-pager for Template Library.
+- [ ] **Me:** Gather data on activation drop-off points.
+- [ ] **Jordan:** Concept wireframes for Interactive Tour & Template selection.
+- [ ] **Sarah:** Clarify Q1 vs Q2 priorities.

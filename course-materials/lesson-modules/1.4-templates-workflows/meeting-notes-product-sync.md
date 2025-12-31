@@ -19,6 +19,7 @@
 **Decision:** Prioritize dark mode for Q2. Start with basic implementation (2 sprints), ship fast, iterate based on usage data.
 
 **Action items:**
+
 - Alex: Finalize tech spec by May 20
 - Jamie: Complete design handoff by May 18
 - Sarah: Update roadmap and communicate to stakeholders
@@ -39,6 +40,7 @@
 **Decision:** Two-part approach. Jamie redesigns invite flow to be more prominent (not required, but clearer value prop). Alex builds 24-hour email reminder if skipped.
 
 **Action items:**
+
 - Jamie: Redesign invite step with clearer benefits copy
 - Alex: Implement email reminder job
 - Sarah: Define success metrics (target: reduce skip rate from 40% to 25%)
@@ -54,3 +56,13 @@
 4. Mobile app performance (ongoing)
 
 **Next sync:** May 22, 2pm
+
+---
+
+## Slack Update
+
+Update on Q2 Roadmap & Priorities 🚀
+
+We're prioritizing Dark Mode for Q2 (2 sprints) based on strong enterprise demand, and fixing the 40% onboarding drop-off with a clearer invite flow.
+
+Next: @alex finalizing tech spec by May 20, @sarah updating roadmap.
